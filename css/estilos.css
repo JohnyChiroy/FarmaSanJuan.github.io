@@ -114,6 +114,17 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.img-contactos{
+    width: 40px;
+    height: 40px;
+    margin-right: 2%;
+}
+
+.img-contactos-ubi{
+    width: 24px;
+    height: 24px;
+}
+
 /* Pie de página relativo al contenido */
 #footer {
     margin-left: 230px;
@@ -159,5 +170,11 @@ form button:hover {
     width: 50%;
     height: 400px;
     border-radius: 2%;
+}
+.iframe-m{
+    text-align: center;
+}
 
+.h5{
+    font-weight: normal;
 }
