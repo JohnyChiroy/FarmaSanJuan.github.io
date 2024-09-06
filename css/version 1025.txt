@@ -1,0 +1,153 @@
+/* Colores */
+/* #03588C */ /*banner*/
+/* #048ABF */ /*cursor*/
+/* #052A59 */ /*letras*/
+/* #034C8C */ /**/
+
+html {
+    scroll-padding-top: 95px; /* Ajusta este valor según la altura de tu banner */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #052A59;
+    display: flex;
+}
+
+/* Estilo para el banner */
+#banner {
+    width: 100%;
+    background-color: #03588C;/*color de banner*/
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#banner h1 {
+    margin: 0;
+}
+
+/* Barra lateral fija */
+#sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    color: #052A59; /*color de letra en barra lateral*/
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 160px;
+    position: fixed;
+    top: 80px; /* Justo debajo del banner */
+    bottom: 500px;
+    left: 0;
+    z-index: 999;
+}
+
+.p-texto{
+    text-align: justify;
+    color: #052A59;
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    margin-bottom: 1rem;
+}
+
+#sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+    background-color: #03588C; /*color de boton en menú*/
+    border-radius: 5px;
+    text-align: center;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: #048ABF; /*color de cursor*/
+}
+
+/* Ajuste del contenido principal */
+#main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    padding-top: 120px; /* Espacio reservado para el banner */
+    width: calc(100% - 250px);
+    min-height: calc(100vh - 120px); /* Resta el espacio del banner y el footer */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Pie de página fijo */
+#footer {
+    width: 100%;
+    background-color: #03588C; 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.7rem;
+    background-color: #03588C; /*color de botón en formulario*/
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #048ABF; /*color de cursor*/
+}
+
+10:27 6/09/2024
