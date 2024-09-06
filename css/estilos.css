@@ -63,9 +63,9 @@ body {
     color: #052A59; /* color de letra en barra lateral */
     height: 100vh;
     padding: 1rem;
-    padding-top: 200px;
+    padding-top: 90px;
     position: fixed;
-    top: 10px; /* Justo debajo del banner */
+    top: 80px; /* Justo debajo del banner */
     bottom: 500px;
     left: 0;
     z-index: 999;
