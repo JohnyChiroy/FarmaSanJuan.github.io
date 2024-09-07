@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #terminal {
+            width: 90%;
+            max-width: 800px;
+            height: 80%;
+            background-color: #000;
+            padding: 20px;
+            border: 2px solid #00ff00;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+
+        #typing {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            #terminal {
+                height: 90%;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #terminal {
+                width: 100%;
+                height: 100%;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="terminal">
+        <div id="typing"></div>
+    </div>
+
+    <script>
+        const terminalText = [
+            "Soy Morfeo",
+            "Quieres salir de la Matrix",
+            "Conectando al servidor...",
+            "Accediendo a la base de datos...",
+            "Autenticando usuario...",
+            "Contraseña encontrada: ********",
+            "Iniciando extracción de datos...",
+            "Datos sensibles encontrados.",
+            "Descargando información: ███████████▒▒▒▒▒▒▒▒▒▒ 50%",
+            "Descarga completada.",
+            "Injectando código malicioso...",
+            "Hackeo completado con éxito. Cerrando conexión.",
+            "Deposítame $1,000,000.00 para no difundir tu información.☠️",
+            "Falla en la Matrix"
+        ];
+
+        let i = 0;
+        const typingElement = document.getElementById('typing');
+
+        function typeText() {
+            if (i < terminalText.length) {
+                typingElement.innerHTML += terminalText[i] + '\n';
+                i++;
+                setTimeout(typeText, Math.random() * 1000 + 500); // Simula tiempos variables entre líneas
+            } else {
+                typingElement.innerHTML += "\n>>> Proceso terminado.";
+            }
+        }
+
+        // Iniciar la simulación al cargar la página
+        window.onload = typeText;
+    </script>
+
+</body>
+</html>

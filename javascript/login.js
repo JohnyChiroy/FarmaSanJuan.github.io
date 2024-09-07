@@ -8,7 +8,7 @@ function login(event) {
     // Validación simple de credenciales
     if (Usuario === "batman" && password === "12345") {
         alert("Inicio de sesión exitoso");
-        window.location.href = "home.html";  // Redirigir a otra página después del login
+        window.location.href = "hola.html";  // Redirigir a otra página después del login
     } else {
         errorMessage.textContent = "Usuario o contraseña incorrectos";
     }
