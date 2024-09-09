@@ -1,0 +1,36 @@
+.p-s {
+    text-align: justify;
+}
+
+/* Estilo del apartado de servs */
+.servs {
+    /* margin: 40px 0; */
+    /* padding: 2px; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Estilo de la cuadrícula de servs */
+.servs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+/* Estilo de cada serv */
+.serv {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del icono de la serv */
+.icono-serv {
+    width: auto;
+    height: 90px;
+    /* margin-bottom: 10px; */
+}
